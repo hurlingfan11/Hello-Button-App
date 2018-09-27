@@ -16,6 +16,7 @@
 
 
     <Button
+        android:onClick="handleDecrement"
         android:shadowColor="#5555"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -24,6 +25,7 @@
         />
 
     <Button
+        android:id="@+id/reset_button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
@@ -31,6 +33,7 @@
         />
 
         <Button
+            android:onClick="handleIncrement"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -41,7 +44,7 @@
 
     <TextView
         android:id="@+id/message_textview"
-        
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/message_start"
